@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="11" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="27" time="143.766">
+    <testcase classname="Register" name="Create a new user via the dsportalapp Portal" time="6.044">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Sign out')]&quot;}&#10;  (Session info: chrome=109.0.5414.75)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [dbb7cc34fb9c811a65cbde044f6f01d9, findElement {using=xpath, value=//a[contains(text(),'Sign out')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\thann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56126/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dbb7cc34fb9c811a65cbde044f6f01d9" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user navigates to the dsportalapp page url "https://dsportalapp.herokuapp.com/".passed
+When user clicks on Get Started button......................................passed
+When user clicks on 'Register' link.........................................passed
+Then The user enter the Livyakumar31 ,LiviDhil@123 and LiviDhil@123.........passed
+And user clicks on the 'Register' button....................................passed
+When user clicks on 'Sign Out link..........................................failed
+Then user will see a message 'Logged out successfully' and user is signed out.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Sign out')]"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbb7cc34fb9c811a65cbde044f6f01d9, findElement {using=xpath, value=//a[contains(text(),'Sign out')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\thann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56126/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbb7cc34fb9c811a65cbde044f6f01d9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at pageObjectModel.registration.clickOnSignOut(registration.java:55)
+	at stepdefinition.ninjaRegistration.user_clicks_on_sign_out_link(ninjaRegistration.java:42)
+	at ✽.user clicks on 'Sign Out link(file:///E:/Vasanthi-SDET/WorkspaceNew/NinjaProject_A/src/test/resources/Features/TC001_Registration.feature:30)
+]]></failure>
+    </testcase>
+    <testcase classname="Login" name="Sign In with the Registered user in dsportalapp Portal" time="1.413">
+        <system-out><![CDATA[Given user navigates to the dsportalapp Login page "https://dsportalapp.herokuapp.com/login".passed
+When user click on SignIn link..............................................passed
+When user enter the Livyakumar31andLiviDhil@123.............................passed
+When user clicks on the Login button........................................passed
+Then user should be logged in...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="HomePage" name="User validates Home page" time="0.698">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'You are not logged in')]&quot;}&#10;  (Session info: chrome=109.0.5414.75)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.5.3', revision: '4b786a1e430'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [dbb7cc34fb9c811a65cbde044f6f01d9, findElement {using=xpath, value=//div[contains(text(),'You are not logged in')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\thann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56126/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dbb7cc34fb9c811a65cbde044f6f01d9" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user navigates to the dsportalapp webpage "https://dsportalapp.herokuapp.com/".passed
+When user clicks on Get Started button in Home..............................passed
+Then The user clicks on data structures dropdown............................passed
+When The user select any one of the dropdown menu...........................passed
+Then It should Alert the user with the message "You are not logged in"......failed
+When The user click any of the Get started button in home page..............skipped
+Then It should Alert the user with the message2 "You are not logged in".....skipped
+When The user click on Register.............................................skipped
+Then The user should be redirected to Register page.........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'You are not logged in')]"}
+  (Session info: chrome=109.0.5414.75)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbb7cc34fb9c811a65cbde044f6f01d9, findElement {using=xpath, value=//div[contains(text(),'You are not logged in')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\thann\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56126/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbb7cc34fb9c811a65cbde044f6f01d9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at pageObjectModel.homePage.loginalert(homePage.java:38)
+	at stepdefinition.ninjaHomePage.it_should_alert_the_user_with_the_message(ninjaHomePage.java:34)
+	at ✽.It should Alert the user with the message "You are not logged in"(file:///E:/Vasanthi-SDET/WorkspaceNew/NinjaProject_A/src/test/resources/Features/TC003_homePage.feature:29)
+]]></failure>
+    </testcase>
+    <testcase classname="DataStructure" name="User validate DataStructure Introduction page" time="10.143">
+        <system-out><![CDATA[Given The user navigates to Home Page "https://dsportalapp.herokuapp.com/home".passed
+When user click on Get started button in Data Structure page................passed
+Then It should navigate to corresponding page with title "Data Structures-Introduction".passed
+When user click on Time Complexity link.....................................passed
+Then It should navigate to corresponding page with title "Time Complexity"..passed
+When user click on Try here button..........................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the code....................................................passed
+And click on run button.....................................................passed
+And click on back button....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Array" name="User validates Array Page" time="0.022">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given The user is in Ninja home page Array "https://dsportalapp.herokuapp.com/home".undefined
+Then click on Get started button under array................................skipped
+And It should navigate to corresponding Array page with title "Array".......skipped
+When user click on Arrays in Phython link...................................skipped
+And It should navigate to corresponding Arrays in Python page with title "Arrays in Python".skipped
+Then user click on Try here in Arrays in Python page........................skipped
+And It should navigate to corresponding Arrays in Python Assessment page with title "Assessment".skipped
+When user enter the Python code in Arrays in Python page....................skipped
+And click on run button in Arrays in Python Assessment page.................skipped
+Then User navigates back to Arrays in Python page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validate Arrays using list page" time="0.006">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on Arrays using list........................................undefined
+And It should navigate to corresponding Arrays Using List page with title "Arrays Using List".skipped
+Then user click on Try here in Arrays Using List page.......................skipped
+And It should navigate to corresponding Arrays Using List Assessment page with title "Assessment".skipped
+When user enter the Python code in Arrays Using List page...................skipped
+And click on run button in Arrays Using List Assessment page................skipped
+Then User navigate back to Arrays Using List page...........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validate Basic Operations in list page" time="0.01">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on Basic Operations in list.................................undefined
+And It should navigate to corresponding Operations in list page with title "Basic Operations in Lists".skipped
+Then user click on Try here in Operations in list page......................skipped
+And It should navigate to corresponding Operations in list Assessment page with title "Assessment".skipped
+When user enter the Python code in Operations in list page..................skipped
+And click on run button in Operations in list Assessment page...............skipped
+Then User navigate back to Operations in list page..........................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validate Applications of Array page" time="0.02">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on Applications of Array....................................undefined
+And It should navigate to corresponding Applications of Array page with title "Applications of Array".skipped
+Then user click on Try here in Applications of Array page...................skipped
+And It should navigate to corresponding Applications of Array Assessment page with title "Assessment".skipped
+When user enter the Python code in Applications of Array page...............skipped
+And click on run button in Applications of Array page.......................skipped
+Then User navigate back to Applications of Array page.......................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validate Practice Questions page" time="0.005">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user click on Practice Questions.......................................undefined
+And It should navigate to corresponding Practice Questions page with title "Practice Questions".skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validates Search the array page" time="0.005">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user click on Search the array link....................................undefined
+And It should navigate to corresponding Search the array page with title "Assessment".skipped
+And click on run button in Search the array page............................skipped
+Then User navigate back to Search the array page............................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validates Max Consecutive Ones page" time="0.007">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user clicks on Max Consecutive Ones link...............................undefined
+And It should navigate to corresponding Max Consecutive Ones page with title "Assessment".skipped
+When user clear the text and enter the Python code in Max Consecutive Ones page print("Max Consecutive Ones").skipped
+And click on run button in Max Consecutive Ones Assessment page.............skipped
+Then User navigate back to Max Consecutive Ones.............................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validate Even Number page" time="0.008">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user click on Find Numbers with Even Number of Digits..................undefined
+And It should navigate to corresponding Even Number page with title "Assessment".skipped
+When user clear the text and enter the Python code in Even Number Assessment page print("Even Number").skipped
+And click on run button in Even Number page.................................skipped
+Then User navigate back to Even Number page.................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Array" name="User validate Sorted Array page" time="0.007">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user click on Find Numbers with Squares of  a Sorted Array.............undefined
+And It should navigate to corresponding Sorted Array page with title "Assessment".skipped
+When user clear the text and enter the Python code in Sorted Array Assessment page print("Sorted Array").skipped
+And click on run button in Sorted Array page................................skipped
+Then user is navigated to home page from Sorted Array page "https://dsportalapp.herokuapp.com/home".skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Linklist" name="User validates LinkList Introduction page" time="12.187">
+        <system-out><![CDATA[Given The user is in Ninja home page "https://dsportalapp.herokuapp.com/home".passed
+When user click on Get Started button on Linklist...........................passed
+Then It should navigate to appropriate page with title "Linked List"........passed
+When user click on Introduction link........................................passed
+Then It should navigate to appropriate page with title Introduction "Introduction".passed
+When user click on Try here button in Introduction page.....................passed
+Then It should navigate to appropriate page with title Assessment "Assessment".passed
+When user enter the code in linklist assesement page........................passed
+And click on run button in linklist assesement page.........................passed
+Then User navigate back from linklist assesement page.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validates Creating Linked List page" time="16.56">
+        <system-out><![CDATA[When user click on Creating Linked List.....................................passed
+Then It should navigate to appropriate page with title "Creating Linked LIst".passed
+When user click on Try here button in Linked List page......................passed
+Then It should navigate to appropriate page with title "Assessment".........passed
+When user enter the code in Creating Linked List page.......................passed
+And click on run button in Creating Linked List page........................passed
+Then User navigate back from Creating Linked List page......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Types of Linked List page" time="16.589">
+        <system-out><![CDATA[When user click on Types of Linked List.....................................passed
+Then It should navigate to appropriate page with title "Types of Linked List".passed
+When user click on Try here button in Types of Linked List..................passed
+Then It should navigate to appropriate page with title "Assessment".........passed
+When user enter code in Types of Linked List................................passed
+And click on run button in Types of Linked List.............................passed
+Then User navigate back from Types of Linked List...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Implement Linked List in Python page" time="16.543">
+        <system-out><![CDATA[When user click on Implement Linked List in Python..........................passed
+Then It should navigate to appropriate page with title "Implement Linked List in Python".passed
+When user click on Try here button in Implement Linked List.................passed
+Then It should navigate to appropriate page with title "Assessment".........passed
+When user enter code in Implement Linked List page..........................passed
+And click on run button in Implement Linked List page.......................passed
+Then User navigate back from Implement Linked List page.....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Traversal page" time="16.569">
+        <system-out><![CDATA[When user click on Traversal link...........................................passed
+Then It should navigate to appropriate page with title "Traversal"..........passed
+When user click on Try here button in Traversal link page...................passed
+Then It should navigate to appropriate page with title "Assessment".........passed
+When user enter the code in Traversal link page.............................passed
+And click on run button in Traversal link page..............................passed
+Then User navigate back from Traversal link page............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Insertion page" time="16.538">
+        <system-out><![CDATA[When user click on Insertion link...........................................passed
+Then It should navigate to appropriate page with title "Insertion"..........passed
+When user click on Try here button in Insertion link page...................passed
+Then It should navigate to appropriate page with title "Assessment".........passed
+When user enter code in Insertion link page.................................passed
+And click on run button in Insertion link page..............................passed
+Then User navigate back from Insertion link page............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Deletion page" time="16.558">
+        <system-out><![CDATA[When user click on Deletion link............................................passed
+Then It should navigate to appropriate page with title "Deletion"...........passed
+When user click on Try here button in Deletion page.........................passed
+Then It should navigate to appropriate page with title "Assessment".........passed
+When user enter the code in in Deletion page................................passed
+And click on run button in Deletion page....................................passed
+Then User navigate back from Deletion page..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Stack" name="User validates Stack page" time="1.262">
+        <system-out><![CDATA[Given The user is in Ninja home page Stack "https://dsportalapp.herokuapp.com/home".passed
+When user clicks on Get Started button under Stack..........................passed
+Then It should navigate to corresponding stack page with title "Stack"......passed
+When user clicks on the link Operations in Stack............................passed
+Then It should navigate to corresponding Operations stack page with title "Operations in Stack".passed
+When user click on Try here link in Operations in Stack page................passed
+Then It should navigate to Operations in Stack Assessment page with title "Assessment".passed
+When user enters the code in Stack page.....................................passed
+And click on run button in Stack page.......................................passed
+Then User navigate back in Stack page.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Stack" name="User validates Implementation page" time="3.907">
+        <system-out><![CDATA[When user click on Implementation link in Stack page........................passed
+Then It should navigate to corresponding Implementation page with title "Implementation".passed
+When user click on Try here  link in Implementation-Stack page..............passed
+Then It should navigate to Implementation-stack page with title "Assessment".passed
+When user enters the code in Implementation page............................passed
+And click on run button in Implementation page..............................passed
+Then User navigate back in Implementation page..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Stack" name="User validates Applications page" time="0.987">
+        <system-out><![CDATA[When user click on Applications link in Stack page..........................passed
+Then It should navigate to corresponding Applications page with title "Applications".passed
+When user click on Try here link in Applications-Stack page.................passed
+Then It should navigate to Applications-stack page with title "Assessment"..passed
+When user enters the code in Applications page..............................passed
+And click on run button in Applications page................................passed
+Then user is navigated to home page from stack page "https://dsportalapp.herokuapp.com/home".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validates Implementation of Queue in Python page" time="1.209">
+        <system-out><![CDATA[Given The user is in Ninja home page Queue "https://dsportalapp.herokuapp.com/home".passed
+When user clicks on Get Started button under Queue..........................passed
+And It should navigates to corresponding page with title Queue "Queue"......passed
+When user clicks on Implementation of Queue in Python.......................passed
+When user clicks on Try here................................................passed
+And It should navigate to corresponding page with title Queue "Assessment"..passed
+When user enters the code in Implementation of Queue in Python Assessment page.passed
+And clicks on run button....................................................passed
+Then User navigates back....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validates Implementation using collections.deque page" time="0.434">
+        <system-out><![CDATA[When user clicks on Implementation using collections.deque..................passed
+And It should navigate to corresponding page with title Queue deque "Implementation using collections.deque".passed
+When user clicks on Try here link...........................................passed
+And It should navigate to corresponding page with title Queue deque"Assessment".passed
+When user enters the code in Implementation using collections.deque Assessment page.passed
+And clicks on run button....................................................passed
+Then User navigates back....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validates Implementation using array page" time="0.977">
+        <system-out><![CDATA[When user click on Implementation using array...............................passed
+And It should navigates to corresponding page with title array "Implementation using array".passed
+When user clicks on Try here link...........................................passed
+And It should navigate to corresponding page with title array "Assessment"..passed
+When user enters the code in Implementation using array Assessment page.....passed
+And clicks on run button....................................................passed
+Then User navigates back....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validates Queue Operations page" time="1.022">
+        <system-out><![CDATA[When user clicks on Queue Operations link...................................passed
+And It should navigate to corresponding page with title operations "Queue Operations".passed
+When user clicks on Try here................................................passed
+And It should navigates to corresponding page with title operations "Assessment".passed
+When user enters the code in Queue Operations Assessment page...............passed
+And clicks on run button....................................................passed
+Then User navigates back to home page "https://dsportalapp.herokuapp.com/home".passed
+]]></system-out>
+    </testcase>
+</testsuite>

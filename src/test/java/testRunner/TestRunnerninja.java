@@ -1,0 +1,42 @@
+package testRunner;
+
+import org.junit.runner.RunWith;
+
+//import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		//tags = "@tagRegistration",//Registration
+		//tags= "@tagLogin",//Login
+		//tags= "@tagLogin or @tagDataStructure",//DataStructure
+		//tags= "@tagHome",//HomePage
+		//tags = "@tagLogin or @taglinkIntro or @tagcreatelink or @taglinkedlist or @tagimplementlist or @tagTraversal or @tagInsertion or @tagDeletion",//Linktext
+		//tags = "@tagLogin or @tagStackOperations or @tagStackImplementation or @tagStackApplications",//Stack
+		//tags = "@tagLogin or @tagImplementation or @tagImplementationdeque or @tagImplementationarray or @tagImplementationOperations",//Queue
+		
+		features="src/test/resources/Features",
+		glue={"stepdefinition"},
+		plugin= {"pretty","junit:target/cucumber-reports/Cucumber.xml","html:target/HtmlReports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+				})
+
+
+/*@ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
+retryCount = 3,
+detailedReport = true,
+detailedAggregatedReport = true,
+overviewReport = true,
+//coverageReport = true,
+jsonUsageReport = "target/cucumber-usage.json",
+usageReport = true,
+toPDF = true,
+//excludeCoverageTags = {"@flaky" },
+includeCoverageTags = {"@tag2" },
+outputFolder = "target")
+*/
+
+public class TestRunnerninja {
+
+}
