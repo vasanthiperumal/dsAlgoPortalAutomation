@@ -16,6 +16,10 @@ import io.cucumber.junit.CucumberOptions;
 		//tags = "@tagLogin or @taglinkIntro or @tagcreatelink or @taglinkedlist or @tagimplementlist or @tagTraversal or @tagInsertion or @tagDeletion",//Linktext
 		//tags = "@tagLogin or @tagStackOperations or @tagStackImplementation or @tagStackApplications",//Stack
 		//tags = "@tagLogin or @tagImplementation or @tagImplementationdeque or @tagImplementationarray or @tagImplementationOperations",//Queue
+		//tags= "@tagLogin or @tagarray or @tagarraylist or @tagarraybasic or @tagarrayapplications or @tagarraypractice or @tagarraypracticesearch or @tagarraypracticemax or @tagarraypracticeeven or @tagarraypracticesquare",//Array
+		//tags= "@tagLogin or @tagtree or @tagtreeTerminologies or @tagtreeTypes or @tagtreeTraversals or @tagtreeIllustration or @tagtreeBinary or @tagtreeBinaryTrees or @tagtreeImplementation or @tagtreeBinaryTraversals or @tagtreeImplementationBinary or @tagtreeApplications or @tagtreeBinarySearch or @tagtreeBST",//Tree
+		//tags="@tagLogin or @taggraph or @taggraphrep",//Graph Page
+	//tags="@tagLogin or @tagDataStructure or @taglinkIntro or @tagcreatelink or @taglinkedlist or @tagimplementlist or @tagTraversal or @tagInsertion or @tagDeletion or @tagStackOperations or @tagStackImplementation or @tagStackApplications or @tagImplementation or @tagImplementationdeque or @tagImplementationarray or @tagImplementationOperations or @tagarray or @tagarraylist or @tagarraybasic or @tagarrayapplications or @tagarraypractice or @tagarraypracticesearch or @tagarraypracticemax or @tagarraypracticeeven or @tagarraypracticesquare or @tagtree or @tagtreeTerminologies or @tagtreeTypes or @tagtreeTraversals or @tagtreeIllustration or @tagtreeBinary or @tagtreeBinaryTrees or @tagtreeImplementation or @tagtreeBinaryTraversals or @tagtreeImplementationBinary or @tagtreeApplications or @tagtreeBinarySearch or @tagtreeBST or @taggraph or @taggraphrep  or @tagRegistration or @tagHome",   
 		
 		features="src/test/resources/Features",
 		glue={"stepdefinition"},

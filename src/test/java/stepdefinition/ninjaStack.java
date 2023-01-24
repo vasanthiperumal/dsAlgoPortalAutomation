@@ -91,7 +91,7 @@ public class ninjaStack extends BaseClass{
 	@Then("User navigate back in Implementation page")
 	public void user_navigate_back_in_implementation_page() throws InterruptedException {
 	    sp.clickOnback();
-	    Thread.sleep(3000);
+	    Thread.sleep(200);
 	}
 
 	@When("user click on Applications link in Stack page")

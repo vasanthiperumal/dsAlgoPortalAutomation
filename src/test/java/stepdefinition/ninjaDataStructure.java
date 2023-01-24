@@ -12,7 +12,7 @@ public class ninjaDataStructure extends BaseClass {
 	public void the_user_navigates_to_home_page(String url) throws InterruptedException {
 		ds=new dataStructure(driver);
 	   	driver.get(url);
-	   	Thread.sleep(3000);
+	   	Thread.sleep(200);
 	}
 	
 	

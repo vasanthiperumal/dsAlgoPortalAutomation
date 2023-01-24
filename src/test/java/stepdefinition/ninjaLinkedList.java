@@ -22,7 +22,7 @@ public class ninjaLinkedList extends BaseClass {
 	@Then("It should navigate to appropriate page with title {string}")
 	public void it_should_navigate_to_appropriate_page_with_title(String string) throws InterruptedException {
 	    ll.getTitleLinkedList();
-	    Thread.sleep(5000);
+	    Thread.sleep(200);
 	}
 
 	@When("user click on Introduction link")

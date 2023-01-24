@@ -26,7 +26,7 @@ public class ninjaSignIn extends BaseClass {
 	
 	@When("^user enter the (.*)and(.*)$")
 	public void the_user_enter_the_user_name_and_password(String username,String password) throws InterruptedException {
-		Thread.sleep(500);
+		Thread.sleep(200);
 		lk.enterUserName(username);
 		lk.enterPassword(password);
 	

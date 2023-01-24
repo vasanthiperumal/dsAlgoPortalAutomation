@@ -31,3 +31,24 @@ Feature: Login
       Examples: 
       | UserName   | Password         | Status |
        | Livyakumar31     | LiviDhil@123       | Pass   |
+       
+       
+  #@tagLoginDataDriven
+  #Scenario Outline: User on login page and login with invalid and valid inputs from Excel "<Sheetname>" and <RowNumber>
+    #Given The user is on signin page
+    #When The user enter sheet "<Sheetname>" and <RowNumber>
+    #Then click login button
+#
+    #Examples: 
+      #| Sheetname | RowNumber |
+      #| Sheet1    |         0 |
+      #| Sheet1    |         1 |
+      #| Sheet1    |         2 |
+      #| Sheet1    |         3 |
+      #
+#
+  #@tagLoginSuccess
+  #Scenario: Verifying signout link
+    #Given The user is on signin page with valid username "vasanthi" and password "Hemsbujji1#"
+    #When The user click signout button
+    #Then The user redirected to homepage

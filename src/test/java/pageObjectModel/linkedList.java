@@ -58,10 +58,10 @@ public void getTitleAssesement() {
 		}
 	
 	public void entertextdata() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(300);
 		
 		 driver.findElement(textdata).sendKeys("print \"DataStructure Introduction\"");
-		 Thread.sleep(3000);
+		 Thread.sleep(300);
 		}
 	
 	public void clickOnrundata() {
