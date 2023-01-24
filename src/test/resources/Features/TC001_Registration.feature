@@ -32,6 +32,6 @@ Feature: Register
 
     Examples: 
       | UserName   | Password        | ConfirmPassword  | Status |
-       | Livyakumar59     | LiviDhil@123    | LiviDhil@123     | Pass   |
+       | Livyakumar69     | LiviDhil@123    | LiviDhil@123     | Pass   |
 
       
