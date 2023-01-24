@@ -9,7 +9,7 @@ public class linkedList {
 	By getstartedlinklist =By.xpath("//body/div[2]/div[3]/div[1]/div[1]/a[1]");
 	By introductionLink = By.xpath("//a[contains(text(),'Introduction')]");
 	By linktryhere =By.xpath("//a[contains(text(),'Try here>>>')]");
-	By textdata= By.xpath("//body/div[1]/div[1]/form[1]/div[1]/div[1]/div[6]");
+	By entertext=By.xpath("//textarea[@tabindex='0']");
 	By rundata=By.xpath("//button[contains(text(),'Run')]");
 	By createLinkedListLink = By.xpath("//a[contains(text(),'Creating Linked LIst')]");
 	By typesOfLinkedListLink = By.xpath("//a[contains(text(),'Types of Linked List')]");
@@ -57,16 +57,18 @@ public void getTitleAssesement() {
 		 
 		}
 	
-	public void entertextdata() throws InterruptedException {
-		Thread.sleep(300);
-		
-		 driver.findElement(textdata).sendKeys("print \"DataStructure Introduction\"");
-		 Thread.sleep(300);
+	public void entertextdata(String name) throws InterruptedException {
+
+		String title = "DataStructure Introduction: " + name;
+		String pythonCode = "print '"+title+"'";
+		driver.findElement(entertext).sendKeys(pythonCode);
+
 		}
 	
 	public void clickOnrundata() {
 		
 		 driver.findElement(rundata).click();
+		 
 		}
 	
 public void clickOnback() {

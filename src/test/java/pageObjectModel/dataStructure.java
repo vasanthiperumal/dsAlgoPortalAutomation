@@ -11,7 +11,7 @@ public class dataStructure {
 	//By datastructure=By.xpath("//body/div[2]/div[1]/div[1]/div[1]/a[1]");
 	By timecomplex=By.xpath("//a[contains(text(),'Time Complexity')]");
 	By tryheredata=By.xpath("//a[contains(text(),'Try here>>>')]");
-	//By textdata=By.xpath("//body/div[1]/div[1]/form[1]/div[1]/div[1]");
+	By entertext=By.xpath("//textarea[@tabindex='0']");
 	By textdata=By.cssSelector("div.container:nth-child(2) div.code-area form:nth-child(1) div.input:nth-child(2) div.CodeMirror.cm-s-default:nth-child(2) > div.CodeMirror-scroll:nth-child(6)");
 	By rundata=By.xpath("//button[contains(text(),'Run')]");
 	
@@ -46,16 +46,17 @@ public class dataStructure {
 		 driver.findElement(tryheredata).click();
 		}
 	
-	public void entertextdata() throws InterruptedException {
-		Thread.sleep(3000);
-		
-		 driver.findElement(textdata).sendKeys("print \"DataStructure Introduction\"");
-		 Thread.sleep(3000);
+	public void entertextdata(String name) throws InterruptedException {
+		String title = "Time Complexity: " + name;
+		String pythonCode = "print '"+title+"'";
+		driver.findElement(entertext).sendKeys(pythonCode);
+		 Thread.sleep(300);
 		}
 	
-	public void clickOnrundata() {
+	public void clickOnrundata() throws InterruptedException {
 		
 		 driver.findElement(rundata).click();
+		 Thread.sleep(1000);
 		}
 	
 	public void clickOnback() {

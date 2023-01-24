@@ -45,12 +45,14 @@ public class ninjaStack extends BaseClass{
 
 	@When("user enters the code in Stack page")
 	public void user_enters_the_code_in_stack_page() throws InterruptedException {
-	    sp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		sp.entertextdata(name);
 	}
 
 	@When("click on run button in Stack page")
-	public void click_on_run_button_in_stack_page() {
+	public void click_on_run_button_in_stack_page() throws InterruptedException {
 	    sp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back in Stack page")
@@ -80,12 +82,14 @@ public class ninjaStack extends BaseClass{
 	
 	@When("user enters the code in Implementation page")
 	public void user_enters_the_code_in_implementation_page() throws InterruptedException {
-	    sp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		sp.entertextdata(name);
 	}
 
 	@When("click on run button in Implementation page")
-	public void click_on_run_button_in_implementation_page() {
+	public void click_on_run_button_in_implementation_page() throws InterruptedException {
 	    sp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back in Implementation page")
@@ -116,12 +120,14 @@ public class ninjaStack extends BaseClass{
 	
 	@When("user enters the code in Applications page")
 	public void user_enters_the_code_in_applications_page() throws InterruptedException {
-	    sp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		sp.entertextdata(name);
 	}
 
 	@When("click on run button in Applications page")
-	public void click_on_run_button_in_applications_page() {
+	public void click_on_run_button_in_applications_page() throws InterruptedException {
 	    sp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 

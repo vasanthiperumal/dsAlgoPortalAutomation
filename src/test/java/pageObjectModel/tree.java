@@ -10,7 +10,7 @@ public class tree  {
 	By getStartedTree = By.xpath("//body/div[2]/div[6]/div[1]/div[1]/a[1]");
 	By OverviewofTrees=By.xpath("//a[contains(text(),'Overview of Trees')]");
 	By tryhere=By.cssSelector("a[class='btn btn-info']");
-	By entertextdata=By.xpath("//body/div[1]/div[1]/form[1]/div[1]/div[1]/div[6]");
+	By entertext=By.xpath("//textarea[@tabindex='0']");
 	By rundata=By.cssSelector("button[onclick='runit()']");
 	By Terminologies=By.xpath("//a[contains(text(),'Terminologies')]");
 	By TypesofTrees=By.xpath("//a[contains(text(),'Types of Trees')]");
@@ -55,16 +55,17 @@ public class tree  {
 		driver.getTitle().equals("Assessment");
 	}
 	
-	public void entertextdata() throws InterruptedException {
-		Thread.sleep(200);
-		//driver.findElement(textdata).clear();
-		driver.findElement(entertextdata).sendKeys("print \"Overview of Trees\"");
-		 Thread.sleep(200);
+	public void entertextdata(String name) throws InterruptedException {
+		String title = "Overview of Trees: " + name;
+		String pythonCode = "print '"+title+"'";
+		driver.findElement(entertext).sendKeys(pythonCode);
+
 		}
 	
-	public void clickOnrundata() {
+	public void clickOnrundata() throws InterruptedException {
 		
 		 driver.findElement(rundata).click();
+		 Thread.sleep(1500);
 		}
 	
 	public void clickOnback() {

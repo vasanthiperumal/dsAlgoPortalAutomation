@@ -10,7 +10,7 @@ public class array {
 	By getStartArray =By.xpath("//body/div[2]/div[2]/div[1]/div[1]/a[1]");
 	By ArraysinPython =By.xpath("//a[contains(text(),'Arrays in Python')]");
 	By tryhere =By.cssSelector("a[class='btn btn-info']");
-	By textdata= By.xpath("//body/div[1]/div[1]/form[1]/div[1]/div[1]/div[6]");
+	By entertext=By.xpath("//textarea[@tabindex='0']");
 	By rundata=By.cssSelector("button[onclick='runit()']");
 	By arraylist =By.xpath("//a[contains(text(),'Arrays Using List')]");
 	By arraybasicOperations =By.xpath("//a[contains(text(),'Basic Operations in Lists')]");
@@ -52,16 +52,16 @@ public class array {
 		driver.getTitle().equals("Assessment");
 	}
 	
-	public void entertextdata() throws InterruptedException {
-		Thread.sleep(200);
-		//driver.findElement(textdata).clear();
-		driver.findElement(textdata).sendKeys("print \"Arrays in Python\"");
-		 Thread.sleep(200);
+	public void entertextdata(String name) throws InterruptedException {
+		String title = "Arrays in Python: " + name;
+		String pythonCode = "print '"+title+"'";
+		driver.findElement(entertext).sendKeys(pythonCode);
 		}
 	
 	public void clickOnrundata() {
 		
 		 driver.findElement(rundata).click();
+		 
 		}
 	
 	public void clickOnback() {
@@ -106,13 +106,15 @@ public class array {
 		}
 	
 		
-	public void practicetextdata() throws InterruptedException {	
+	public void practicetextdata(String name) throws InterruptedException {	
 		Thread.sleep(200);
 		//driver.findElement(practicetextdata).clear();
 		driver.findElement(practicetextdata).sendKeys(Keys.CONTROL,"a");
 		driver.findElement(practicetextdata).sendKeys(Keys.DELETE);
 		Thread.sleep(200);
-		driver.findElement(practicetextdata).sendKeys("print \"Search the array\"");
+		String title = "Search the array: " + name;
+		String pythonCode = "print '"+title+"'";
+		driver.findElement(entertext).sendKeys(pythonCode);
 		Thread.sleep(200);
 		}
 	

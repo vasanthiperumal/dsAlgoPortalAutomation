@@ -1,11 +1,17 @@
 package stepdefinition;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjectModel.graphPage;
 
 public class ninjaGraph extends BaseClass {
+	
+	private static final Logger logger = LogManager.getLogger(ninjaGraph.class);
 	
 	@Given("The user is in Ninja home page to navigate to graph Page {string}")
 	public void the_user_is_in_ninja_home_page_to_navigate_to_graph_page(String url) {
@@ -40,11 +46,12 @@ public class ninjaGraph extends BaseClass {
 
 	@When("user enter the Python code in graph page")
 	public void user_enter_the_python_code_in_graph_page() {
-	   gp.clickonentertext();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+	   gp.clickonentertext(name);
 	}
 
 	@When("click on run button in graph page")
-	public void click_on_run_button_in_graph_page() {
+	public void click_on_run_button_in_graph_page() throws InterruptedException {
 	    gp.clickonrunbutton();
 	}
 
@@ -70,11 +77,14 @@ public class ninjaGraph extends BaseClass {
 
 	@When("user enter the Python code in Graph Representations page")
 	public void user_enter_the_python_code_in_graph_representations_page() {
-	    gp.clickonentertext();
+		
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		logger.info("Method name: "+ name);
+	    gp.clickonentertext(name);
 	}
 
 	@When("click on run button in Graph Representations page")
-	public void click_on_run_button_in_graph_representations_page() {
+	public void click_on_run_button_in_graph_representations_page() throws InterruptedException {
 	    gp.clickonrunbutton();
 	}
 

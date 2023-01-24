@@ -9,7 +9,7 @@ public class queuePage {
 	By getStartedQueue= By.xpath("//body/div[2]/div[5]/div[1]/div[1]/a[1]");
 	By ImplementationofQueue=By.xpath("//a[contains(text(),'Implementation of Queue in Python')]");
 	By tryhere=By.xpath("//a[contains(text(),'Try here>>>')]");
-	By textdata= By.xpath("//body/div[1]/div[1]/form[1]/div[1]/div[1]/div[6]");
+	By entertext=By.xpath("//textarea[@tabindex='0']");
 	By rundata=By.xpath("//button[contains(text(),'Run')]");
 	By ImplementationCollections=By.xpath("//a[contains(text(),'Implementation using collections.deque')]");
 	By ImplementationArray=By.xpath("//a[contains(text(),'Implementation using array')]");
@@ -53,16 +53,16 @@ public class queuePage {
 			driver.getTitle().equals("Assessment");
 		}
 		
-		public void entertextdata() throws InterruptedException {
-			Thread.sleep(200);
-			
-			 driver.findElement(textdata).sendKeys("print \"Implementation of Queue\"");
-			 Thread.sleep(200);
+		public void entertextdata(String name) throws InterruptedException {
+			String title = "Implementation of Queue: " + name;
+			String pythonCode = "print '"+title+"'";
+			driver.findElement(entertext).sendKeys(pythonCode);
 			}
 		
-		public void clickOnrundata() {
+		public void clickOnrundata() throws InterruptedException {
 			
 			 driver.findElement(rundata).click();
+			 Thread.sleep(1500);
 			}
 		
 	public void clickOnback() {

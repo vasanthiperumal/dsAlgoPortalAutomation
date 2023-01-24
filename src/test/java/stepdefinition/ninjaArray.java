@@ -45,12 +45,14 @@ public class ninjaArray extends BaseClass {
 
 	@When("user enter the Python code in Arrays in Python page")
 	public void user_enter_the_python_code_in_arrays_in_python_page() throws InterruptedException {
-	    ap.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		   ap.entertextdata(name);
 	}
 
 	@When("click on run button in Arrays in Python Assessment page")
-	public void click_on_run_button_in_arrays_in_python_assessment_page() {
+	public void click_on_run_button_in_arrays_in_python_assessment_page() throws InterruptedException {
 	   ap.clickOnrundata();
+	   Thread.sleep(1500);
 	}
 
 	@Then("User navigates back to Arrays in Python page")
@@ -80,12 +82,14 @@ public class ninjaArray extends BaseClass {
 
 	@When("user enter the Python code in Arrays Using List page")
 	public void user_enter_the_python_code_in_arrays_using_list_page() throws InterruptedException {
-	    ap.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		   ap.entertextdata(name);
 	}
 
 	@When("click on run button in Arrays Using List Assessment page")
-	public void click_on_run_button_in_arrays_using_list_assessment_page() {
+	public void click_on_run_button_in_arrays_using_list_assessment_page() throws InterruptedException {
 	   ap.clickOnrundata();
+	   Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Arrays Using List page")
@@ -115,13 +119,16 @@ public class ninjaArray extends BaseClass {
 
 	@When("user enter the Python code in Operations in list page")
 	public void user_enter_the_python_code_in_operations_in_list_page() throws InterruptedException {
-	    ap.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		   ap.entertextdata(name);
 	}
 
 	@When("click on run button in Operations in list Assessment page")
-	public void click_on_run_button_in_operations_in_list_assessment_page() {
+	public void click_on_run_button_in_operations_in_list_assessment_page() throws InterruptedException {
 	    ap.clickOnrundata();
+	    Thread.sleep(1500);
 	}
+	
 
 	@Then("User navigate back to Operations in list page")
 	public void user_navigate_back_to_operations_in_list_page() {
@@ -150,12 +157,14 @@ public class ninjaArray extends BaseClass {
 
 	@When("user enter the Python code in Applications of Array page")
 	public void user_enter_the_python_code_in_applications_of_array_page() throws InterruptedException {
-	    ap.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		   ap.entertextdata(name);
 	}
 
 	@When("click on run button in Applications of Array page")
-	public void click_on_run_button_in_applications_of_array_page() {
+	public void click_on_run_button_in_applications_of_array_page() throws InterruptedException {
 	    ap.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Applications of Array page")
@@ -185,7 +194,8 @@ public class ninjaArray extends BaseClass {
 
 	@When("user enter the Python code in Search the array page")
 	public void user_enter_the_python_code_in_search_the_array_page() throws InterruptedException {
-		ap.practicetextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ap.practicetextdata(name);
 	}
 	
 	/*@When("user enter the Python code in Search the array page print\\({string})")
@@ -195,8 +205,9 @@ public class ninjaArray extends BaseClass {
 	*/
 
 	@When("click on run button in Search the array page")
-	public void click_on_run_button_in_search_the_array_page() {
+	public void click_on_run_button_in_search_the_array_page() throws InterruptedException {
 	   ap.clickOnrundata();
+	   Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Search the array page")
@@ -216,12 +227,14 @@ public class ninjaArray extends BaseClass {
 
 	@When("user clear the text and enter the Python code in Max Consecutive Ones page")
 	public void user_clear_the_text_and_enter_the_python_code_in_max_consecutive_ones_page() throws InterruptedException {
-		 ap.practicetextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ap.practicetextdata(name);
 	}
 
 	@When("click on run button in Max Consecutive Ones Assessment page")
-	public void click_on_run_button_in_max_consecutive_ones_assessment_page() {
+	public void click_on_run_button_in_max_consecutive_ones_assessment_page() throws InterruptedException {
 	    ap.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Max Consecutive Ones")
@@ -242,12 +255,14 @@ public class ninjaArray extends BaseClass {
 	@When("user clear the text and enter the Python code in Even Number Assessment page")
 	public void user_clear_the_text_and_enter_the_python_code_in_even_number_assessment_page() throws InterruptedException {
 
-		ap.practicetextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ap.practicetextdata(name);
 	}
 
 	@When("click on run button in Even Number page")
-	public void click_on_run_button_in_even_number_page() {
+	public void click_on_run_button_in_even_number_page() throws InterruptedException {
 	   ap.clickOnrundata();
+	   Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Even Number page")
@@ -267,12 +282,14 @@ public class ninjaArray extends BaseClass {
 
 	@When("user clear the text and enter the Python code in Sorted Array Assessment page")
 	public void user_clear_the_text_and_enter_the_python_code_in_sorted_array_assessment_page() throws InterruptedException {
-		ap.practicetextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		   ap.practicetextdata(name);
 	}
 
 	@When("click on run button in Sorted Array page")
-	public void click_on_run_button_in_sorted_array_page() {
+	public void click_on_run_button_in_sorted_array_page() throws InterruptedException {
 	    ap.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("user is navigated to home page from Sorted Array page {string}")

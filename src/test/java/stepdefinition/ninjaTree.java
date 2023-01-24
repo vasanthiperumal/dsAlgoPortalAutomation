@@ -42,12 +42,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Overview of Trees page")
 	public void user_enter_the_python_code_in_overview_of_trees_page() throws InterruptedException {
-	   tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Overview of Trees page")
-	public void click_on_run_button_in_overview_of_trees_page() {
+	public void click_on_run_button_in_overview_of_trees_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Overview of Trees")
@@ -73,12 +75,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Terminologies page")
 	public void user_enter_the_python_code_in_terminologies_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Terminologies page")
-	public void click_on_run_button_in_terminologies_page() {
+	public void click_on_run_button_in_terminologies_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Terminologies page")
@@ -103,12 +107,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Types of Trees page")
 	public void user_enter_the_python_code_in_types_of_trees_page() throws InterruptedException {
-	   tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Types of Trees page")
-	public void click_on_run_button_in_types_of_trees_page() {
+	public void click_on_run_button_in_types_of_trees_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Types of Trees page")
@@ -133,12 +139,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Tree Traversals page")
 	public void user_enter_the_python_code_in_tree_traversals_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Tree Traversals page")
-	public void click_on_run_button_in_tree_traversals_page() {
+	public void click_on_run_button_in_tree_traversals_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Tree Traversals page")
@@ -163,12 +171,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Traversals-Illustration page")
 	public void user_enter_the_python_code_in_traversals_illustration_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Traversals-Illustration page")
-	public void click_on_run_button_in_traversals_illustration_page() {
+	public void click_on_run_button_in_traversals_illustration_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Traversals-Illustration page")
@@ -193,12 +203,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Binary Trees page")
 	public void user_enter_the_python_code_in_binary_trees_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Binary Trees page")
-	public void click_on_run_button_in_binary_trees_page() {
+	public void click_on_run_button_in_binary_trees_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Binary Trees page")
@@ -223,12 +235,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Types of Binary Trees page")
 	public void user_enter_the_python_code_in_types_of_binary_trees_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Types of Binary Trees page")
-	public void click_on_run_button_in_types_of_binary_trees_page() {
+	public void click_on_run_button_in_types_of_binary_trees_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Types of Binary Trees page")
@@ -253,12 +267,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Implementation in Python page")
 	public void user_enter_the_python_code_in_implementation_in_python_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Implementation in Python page")
-	public void click_on_run_button_in_implementation_in_python_page() {
+	public void click_on_run_button_in_implementation_in_python_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Implementation in Python page")
@@ -283,12 +299,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Binary Tree Traversals page")
 	public void user_enter_the_python_code_in_binary_tree_traversals_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Binary Tree Traversals page")
-	public void click_on_run_button_in_binary_tree_traversals_page() {
+	public void click_on_run_button_in_binary_tree_traversals_page() throws InterruptedException {
 	   tp.clickOnrundata();
+	   Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Binary Tree Traversals page")
@@ -313,12 +331,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Implementation of Binary Trees page")
 	public void user_enter_the_python_code_in_implementation_of_binary_trees_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Implementation of Binary Trees page")
-	public void click_on_run_button_in_implementation_of_binary_trees_page() {
+	public void click_on_run_button_in_implementation_of_binary_trees_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Implementation of Binary Trees page")
@@ -343,12 +363,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Applications of Binary trees page")
 	public void user_enter_the_python_code_in_applications_of_binary_trees_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Applications of Binary trees page")
-	public void click_on_run_button_in_applications_of_binary_trees_page() {
+	public void click_on_run_button_in_applications_of_binary_trees_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Applications of Binary trees page")
@@ -373,12 +395,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Binary Search Trees page")
 	public void user_enter_the_python_code_in_binary_search_trees_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Binary Search Trees page")
-	public void click_on_run_button_in_binary_search_trees_page() {
+	public void click_on_run_button_in_binary_search_trees_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back to Binary Search Trees page")
@@ -403,12 +427,14 @@ public class ninjaTree extends BaseClass {
 
 	@When("user enter the Python code in Implementation Of BST page")
 	public void user_enter_the_python_code_in_implementation_of_bst_page() throws InterruptedException {
-	    tp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		tp.entertextdata(name);
 	}
 
 	@When("click on run button in Implementation Of BST page")
-	public void click_on_run_button_in_implementation_of_bst_page() {
+	public void click_on_run_button_in_implementation_of_bst_page() throws InterruptedException {
 	    tp.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("user is navigated to home page from Implementation Of BST {string}")

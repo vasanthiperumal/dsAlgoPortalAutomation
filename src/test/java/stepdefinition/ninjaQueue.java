@@ -40,12 +40,14 @@ public class ninjaQueue extends BaseClass {
 
 	@When("user enters the code in Implementation of Queue in Python Assessment page")
 	public void user_enters_the_code_in_implementation_of_queue_in_python_assessment_page() throws InterruptedException {
-	    qp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		qp.entertextdata(name);
 	}
 
 	@When("clicks on run button")
-	public void clicks_on_run_button() {
+	public void clicks_on_run_button() throws InterruptedException {
 	   qp.clickOnrundata();
+	   Thread.sleep(1500);
 	}
 
 	@Then("User navigates back")
@@ -90,7 +92,8 @@ public class ninjaQueue extends BaseClass {
 
 	@When("user enters the code in Implementation using array Assessment page")
 	public void user_enters_the_code_in_implementation_using_array_assessment_page() throws InterruptedException {
-	    qp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		qp.entertextdata(name);
 	}
 	
 	@When("It should navigate to corresponding page with title array {string}")
@@ -110,7 +113,8 @@ public class ninjaQueue extends BaseClass {
 
 	@When("user enters the code in Queue Operations Assessment page")
 	public void user_enters_the_code_in_queue_operations_assessment_page() throws InterruptedException {
-		 qp.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		qp.entertextdata(name);
 	}
 	
 	@When("It should navigates to corresponding page with title operations {string}")

@@ -48,12 +48,14 @@ public class ninjaLinkedList extends BaseClass {
 
 	@When("user enter the code in linklist assesement page")
 	public void user_enter_the_code_in_linklist_assesement_page() throws InterruptedException {
-	   ll.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		   ll.entertextdata(name);
 	}
 
 	@When("click on run button in linklist assesement page")
-	public void click_on_run_button_in_linklist_assesement_page() {
+	public void click_on_run_button_in_linklist_assesement_page() throws InterruptedException {
 	    ll.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back from linklist assesement page")
@@ -73,12 +75,14 @@ public class ninjaLinkedList extends BaseClass {
 
 	@When("user enter the code in Creating Linked List page")
 	public void user_enter_the_code_in_creating_linked_list_page() throws InterruptedException {
-	    ll.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ll.entertextdata(name);
 	}
 
 	@When("click on run button in Creating Linked List page")
-	public void click_on_run_button_in_creating_linked_list_page() {
+	public void click_on_run_button_in_creating_linked_list_page() throws InterruptedException {
 	    ll.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back from Creating Linked List page")
@@ -98,12 +102,14 @@ public class ninjaLinkedList extends BaseClass {
 
 	@When("user enter code in Types of Linked List")
 	public void user_enter_code_in_types_of_linked_list() throws InterruptedException {
-	    ll.entertextdata();
+	    String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ll.entertextdata(name);
 	}
 
 	@When("click on run button in Types of Linked List")
-	public void click_on_run_button_in_types_of_linked_list() {
+	public void click_on_run_button_in_types_of_linked_list() throws InterruptedException {
 	    ll.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back from Types of Linked List")
@@ -123,12 +129,14 @@ public class ninjaLinkedList extends BaseClass {
 
 	@When("user enter code in Implement Linked List page")
 	public void user_enter_code_in_implement_linked_list_page() throws InterruptedException {
-	    ll.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ll.entertextdata(name);
 	}
 
 	@When("click on run button in Implement Linked List page")
-	public void click_on_run_button_in_implement_linked_list_page() {
+	public void click_on_run_button_in_implement_linked_list_page() throws InterruptedException {
 	    ll.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back from Implement Linked List page")
@@ -148,12 +156,14 @@ public class ninjaLinkedList extends BaseClass {
 
 	@When("user enter the code in Traversal link page")
 	public void user_enter_the_code_in_traversal_link_page() throws InterruptedException {
-	    ll.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ll.entertextdata(name);
 	}
 
 	@When("click on run button in Traversal link page")
-	public void click_on_run_button_in_traversal_link_page() {
+	public void click_on_run_button_in_traversal_link_page() throws InterruptedException {
 	    ll.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back from Traversal link page")
@@ -173,12 +183,14 @@ public class ninjaLinkedList extends BaseClass {
 
 	@When("user enter code in Insertion link page")
 	public void user_enter_code_in_insertion_link_page() throws InterruptedException {
-	    ll.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ll.entertextdata(name);
 	}
 
 	@When("click on run button in Insertion link page")
-	public void click_on_run_button_in_insertion_link_page() {
+	public void click_on_run_button_in_insertion_link_page() throws InterruptedException {
 	    ll.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back from Insertion link page")
@@ -198,12 +210,14 @@ public class ninjaLinkedList extends BaseClass {
 
 	@When("user enter the code in in Deletion page")
 	public void user_enter_the_code_in_in_deletion_page() throws InterruptedException {
-	    ll.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+		ll.entertextdata(name);
 	}
 
 	@When("click on run button in Deletion page")
-	public void click_on_run_button_in_deletion_page() {
+	public void click_on_run_button_in_deletion_page() throws InterruptedException {
 	    ll.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 
 	@Then("User navigate back from Deletion page")

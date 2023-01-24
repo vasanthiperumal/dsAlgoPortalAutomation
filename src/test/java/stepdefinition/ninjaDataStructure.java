@@ -1,13 +1,18 @@
 package stepdefinition;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjectModel.dataStructure;
+import pageObjectModel.graphPage;
 
 public class ninjaDataStructure extends BaseClass {
 	
-		
+	private static final Logger logger = LogManager.getLogger(ninjaDataStructure.class);
+	
 	@Given("The user navigates to Home Page {string}")
 	public void the_user_navigates_to_home_page(String url) throws InterruptedException {
 		ds=new dataStructure(driver);
@@ -39,12 +44,14 @@ public class ninjaDataStructure extends BaseClass {
 
 	@When("user enter the code")
 	public void user_enter_the_code() throws InterruptedException {
-	    ds.entertextdata();
+		String name = new Object(){}.getClass().getEnclosingMethod().getName();
+	   ds.entertextdata(name);
 	}
 
 	@When("click on run button")
-	public void click_on_run_button() {
+	public void click_on_run_button() throws InterruptedException {
 	    ds.clickOnrundata();
+	    Thread.sleep(1500);
 	}
 	
 	@When("click on back button")
